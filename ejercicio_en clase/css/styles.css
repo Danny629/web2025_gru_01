@@ -1,0 +1,20 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+}
+.flex-item {
+    flex: 1;
+    margin: 15px;
+    background-color: orange;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    color: white;
+}
+.flex-item:nth-child(1) { background-color: rgb(255, 0, 0); }
+.flex-item:nth-child(2) { background-color: rgb(125, 12, 190); }
+.flex-item:nth-child(3) { background-color: rgb(10, 255, 120); }
+.flex-item:nth-child(4) { background-color: rgb(255, 255, 0); }

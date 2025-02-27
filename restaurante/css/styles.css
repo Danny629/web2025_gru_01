@@ -1,0 +1,80 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #d1e7c8;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#prueba {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    height: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#menu{
+    font-size: 40px;
+    color:#8C543F;
+    font-weight: bold;
+}
+#resta{
+    font-size: 20px;
+    color:#8C543F;
+    font-weight: bold;
+}
+#toke{
+    color: rgb(22, 129, 67);
+}
+
+#principal {
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    border: solid black;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contenedor {
+    width: 500px;
+    height: 80%;
+    border: solid black;
+}
+#delicia{           /*hamburguesa*/   
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+#publicidad{          /*comedor*/   
+    width: 100px;
+    height: 90px;
+    margin-left: auto; 
+    display: block;
+    }
+#dulce{               /*helado*/   
+    width: 100px;
+    height: 70px;
+   }
+   #refresco{   
+    width: 150px;
+    height: 150px;            /*refreco*/   
+    margin-left: auto; 
+    display: block;
+    margin-left: auto; 
+    display: block;
+   }

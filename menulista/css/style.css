@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor {
+
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+        "A A A A"
+        "A A A A"
+        "A A A A"
+        "uno dos tres cuatro"
+        "uno dos tres cuatro"
+        "b b b b"
+        "c c c c"
+        "d d d d"
+        "e e e e"
+        ;
+}
+
+#A {
+    grid-area: A;
+    background-color: rgb(122, 236, 122);
+    text-align: center;
+}
+
+#A1 {
+    grid-area: uno;
+    background-color: rgb(50, 32, 155);
+    text-align: center;
+}
+
+#B2 {
+    grid-area: dos;
+    background-color: rgb(51, 80, 51);
+    text-align: center;
+}
+
+#C3 {
+    grid-area: tres;
+    background-color: rgb(170, 36, 92);
+    text-align: center;
+}
+
+#D4 {
+    grid-area: cuatro;
+    background-color: rgb(216, 245, 90);
+    text-align: center;
+}
+
+#B {
+    grid-area: b;
+    background-color: rgb(27, 27, 25);
+    text-align: center;
+}
+
+#C {
+    grid-area: c;
+    background-color: rgb(119, 52, 136);
+    text-align: center;
+}
+
+#D {
+    grid-area: d;
+    background-color: rgb(15, 131, 112);
+    text-align: center;
+}
+
+#E {
+    grid-area: e;
+    background-color: rgb(75, 16, 238);
+    text-align: center;
+}
+
+@media(max-width: 1000px) {
+    #contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:
+            "A A"
+            "A A"
+            "uno dos"
+            "tres cuatro"
+            "b b"
+            "c c"
+            "d d"
+            "e e "
+            "e e"
+  }
+}
+@media(max-width: 500px) {
+    #contenedor {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+           "A"
+           "uno"
+           "dos"
+           "tres"
+           "cuatro"
+           "b"
+           "e"
+           "c"
+           "e"
+           "d"
+           "e"
+           "e"
+           "e"
+    }
+}

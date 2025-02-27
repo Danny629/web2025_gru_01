@@ -1,0 +1,72 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #97a1a1;
+}
+
+#contenedor {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 500px repeat(4, 200px);
+    grid-template-areas:
+        "primero"
+        "A"
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+    ;
+}
+
+#primero {
+    grid-area: primero;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#circulo {
+    width: 40%;
+    height: 30px;
+    background-color: black;
+    margin-left: 20px;
+}
+
+
+i {
+    margin-left: auto;
+    font-size: 30px;
+}
+
+#A {
+    grid-area: A;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.flor{
+    font-size: 40px;
+}
+
+#uno{
+    grid-area: uno;
+    background-color: blue;
+}
+
+#dos{
+    grid-area: dos;
+    background-color: rgb(121, 209, 5);
+}
+
+#tres{
+    grid-area: tres;
+    background-color: rgb(187, 116, 23);
+}
+
+#cuatro{
+    grid-area: cuatro;
+    background-color: bisque;
+}
